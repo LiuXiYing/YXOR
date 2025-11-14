@@ -1,0 +1,23 @@
+{
+    "name": "yxor-project",
+    "version": "1.0.0",
+    "description": "YXOR Team CTF战队展示网站 - 前后端分离项目",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+        "backend": "cd backend && npm run dev",
+        "frontend": "cd frontend && npm run dev"
+    },
+    "keywords": [
+        "ctf",
+        "yxor",
+        "security",
+        "react",
+        "express"
+    ],
+    "author": "YXOR Team",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^8.2.1"
+    }
+}

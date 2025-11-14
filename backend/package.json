@@ -1,0 +1,38 @@
+{
+    "name": "yxor-backend",
+    "version": "1.0.0",
+    "description": "YXOR Team CTF展示网站后端",
+    "main": "server.js",
+    "type": "module",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js",
+        "start:db": "node server-db.js",
+        "dev:db": "node --watch server-db.js",
+        "start:sqlite": "node server-sqlite.js",
+        "dev:sqlite": "node --watch server-sqlite.js",
+        "init-db": "node init-db.js",
+        "build": "npm install --production"
+    },
+    "keywords": [
+        "ctf",
+        "yxor"
+    ],
+    "author": "YXOR Team",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "mongoose": "^7.5.0",
+        "sqlite3": "^5.1.6",
+        "bcryptjs": "^2.4.3",
+        "validator": "^13.11.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}

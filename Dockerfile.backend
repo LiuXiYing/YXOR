@@ -1,0 +1,16 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY backend/package*.json ./
+RUN npm install
+
+COPY backend/server.js .
+COPY backend/.env .env || true
+
+ENV NODE_ENV=development
+ENV PORT=3001
+
+EXPOSE 3001
+
+CMD ["npm", "run", "dev"]
